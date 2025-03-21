@@ -1,6 +1,7 @@
 # Txgls Wallet
 
-<br>Thank you for installing my resource. This resource is free and will remain free. It's a very simple inventory creation for wallets.</br>
+<br>Thank you for installing my resource. This resource is free and will remain free. It's a very simple inventory creation for wallets. I am happy to take suggestions for this resource, otherwise it will most likely remain
+how it is.</br>
 
 # Installation
 <br>Step #1. Download the resource.</br>
