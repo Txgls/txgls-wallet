@@ -1,18 +1,18 @@
 # Txgls Wallet
 
-Thank you for installing my resource. This resource is free and will remain free. It's a very simple inventory creation for wallets.
+<br>Thank you for installing my resource. This resource is free and will remain free. It's a very simple inventory creation for wallets.</br>
 
 # Installation
-Step #1. Download the resource.
-Step #2. Put it in your server resources folder.
-Step #3. Ensure it in your server.cfg.
+<br>Step #1. Download the resource.</br>
+<br>Step #2. Put it in your server resources folder.</br>
+<br>Step #3. Ensure it in your server.cfg.</br>
 
 # Ensure order:
-ox_lib
-ox_inventory
-txgls-wallet
--- other resources.
+<br>ox_lib</br>
+<br>ox_inventory</br>
+<br>txgls-wallet</br>
+<br>-- other resources.</br>
 
 # Implementing into ox_inventory
-Go into the install directory and then images (txgls-wallet/install/images) and put that image into ox_inventory/web/images.
-Go into the install directory and then item (txgls-wallet/install/item) and put that item into ox_inventory/data/items.lua
+<br>Go into the install directory and then images (txgls-wallet/install/images) and put that image into ox_inventory/web/images.</br>
+<br>Go into the install directory and then item (txgls-wallet/install/item) and put that item into ox_inventory/data/items.lua</br>
