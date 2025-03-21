@@ -8,7 +8,7 @@ Config.WalletItem = {
 -- Wallet stash settings
 Config.WalletStash = {
     slots = 5,                -- Number of slots in the wallet.
-    weight = 100,           -- Maximum weight the wallet can hold (keep small).
+    weight = 100,             -- Maximum weight the wallet can hold (keep small).
     label = "Wallet"          -- Label for the stash.
 }
 
