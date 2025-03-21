@@ -11,5 +11,7 @@ AddEventHandler('wallet:useWalletItem', function()
     local playerIdentifier = GetPlayerIdentifier(playerId, 0)
     local stashName = "wallet_" .. playerIdentifier
 
+    exports.ox_inventory:RegisterStash(stashName, Config.WalletStash.label, Config.WalletStash.slots, Config.WalletStash.weight, false)
+
     TriggerClientEvent('wallet:openWallet', playerId, stashName)
 end)
