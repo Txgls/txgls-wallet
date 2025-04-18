@@ -1,17 +1,18 @@
-local function createWalletStash(playerId, identifier)
-    local stashName = "wallet_" .. identifier
-    exports.ox_inventory:RegisterStash(stashName, Config.WalletStash.label, Config.WalletStash.slots, Config.WalletStash.weight, false)
+local QBCore = exports['qb-core']:GetCoreObject()
 
+local function createWalletStash(citizenid)
+    local stashName = "wallet_" .. citizenid
+    exports.ox_inventory:RegisterStash(stashName, Config.WalletStash.label, Config.WalletStash.slots, Config.WalletStash.weight, false)
     return stashName
 end
 
-RegisterNetEvent('wallet:useWalletItem')
-AddEventHandler('wallet:useWalletItem', function()
-    local playerId = source
-    local playerIdentifier = GetPlayerIdentifier(playerId, 0)
-    local stashName = "wallet_" .. playerIdentifier
+RegisterNetEvent('wallet:useWalletItem', function()
+    local Player = QBCore.Functions.GetPlayer(source)
+    if not Player then return end
 
-    exports.ox_inventory:RegisterStash(stashName, Config.WalletStash.label, Config.WalletStash.slots, Config.WalletStash.weight, false)
+    local citizenid = Player.PlayerData.citizenid
+    if not citizenid then return end
 
-    TriggerClientEvent('wallet:openWallet', playerId, stashName)
+    local stashName = createWalletStash(citizenid)
+    TriggerClientEvent('wallet:openWallet', source, stashName)
 end)
