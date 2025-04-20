@@ -3,7 +3,7 @@ game 'gta5'
 
 author 'Txgls'
 description 'A wallet script for QBCore & Ox Resources.'
-version '1.0.0'
+version '1.0.1'
 
 dependencies {
     'ox_inventory',
